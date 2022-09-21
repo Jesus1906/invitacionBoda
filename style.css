@@ -20,11 +20,15 @@ figure{
     z-index: 1;
  }
 
-div a{
+ div a{
     position: absolute;
-    bottom: 5rem;
+ }
+
+.ubicacion{
+    /* position: absolute; */
+    bottom: 3rem;
     right: 5rem;
-    width: 16rem;
+    width: 12rem;
     height: 8rem;
     background-color: orange;
     z-index: 100;
@@ -34,5 +38,35 @@ div a{
     font-weight: 400;
     color: white;
     border-radius: 10px;
+    opacity: .001;
+}
+
+.amazon{
+    top: 12rem;
+    left: 2rem;
+    width: 8rem;
+    height: 7rem;
+    background-color: orange;
+    z-index: 100;
+    opacity: .001;
+}
+
+.liverpool{
+    top: 12rem;
+    left: 11rem;
+    width: 8rem;
+    height: 7rem;
+    background-color:pink;
+    z-index: 200;
+    opacity: .001;
+}
+
+.ph{
+    top: 12rem;
+    right: 2rem;
+    width: 8rem;
+    height: 7rem;
+    background-color:blue;
+    z-index: 100;
     opacity: .001;
 }
