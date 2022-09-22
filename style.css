@@ -44,8 +44,8 @@ figure{
 .amazon{
     top: 13rem;
     left: 3rem;
-    width: 5rem;
-    height: 7rem;
+    width: 6rem;
+    height: 9rem;
     background-color: orange;
     z-index: 100;
     /* opacity: .001; */
@@ -53,9 +53,9 @@ figure{
 
 .liverpool{
     top: 13rem;
-    left: 10rem;
-    width: 5rem;
-    height: 7rem;
+    left: 11rem;
+    width: 6rem;
+    height: 9rem;
     background-color:pink;
     z-index: 200;
     /* opacity: .001; */
@@ -64,8 +64,8 @@ figure{
 .ph{
     top: 13rem;
     right: 2rem;
-    width: 5rem;
-    height: 7rem;
+    width: 6rem;
+    height: 9rem;
     background-color:blue;
     z-index: 100;
     /* opacity: .001; */
