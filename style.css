@@ -29,7 +29,7 @@ figure{
     bottom: 4rem;
     right: 2rem;
     width: 12rem;
-    height: 8rem;
+    height: 12rem;
     background-color: orange;
     z-index: 100;
     text-decoration: none;
@@ -45,7 +45,7 @@ figure{
     top: 13rem;
     left: 3rem;
     width: 6rem;
-    height: 9rem;
+    height: 12rem;
     background-color: orange;
     z-index: 100;
     /* opacity: .001; */
@@ -55,7 +55,7 @@ figure{
     top: 13rem;
     left: 11rem;
     width: 6rem;
-    height: 9rem;
+    height: 12rem;
     background-color:pink;
     z-index: 200;
     /* opacity: .001; */
@@ -65,8 +65,8 @@ figure{
     top: 13rem;
     right: 2rem;
     width: 6rem;
-    height: 9rem;
-    background-color:blue;
+    height: 12rem;
+    background-color:red;
     z-index: 100;
     /* opacity: .001; */
 }
