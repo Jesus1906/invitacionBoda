@@ -48,12 +48,12 @@ figure{
     height: 12rem;
     background-color: orange;
     z-index: 100;
-    /* opacity: .001; */
+    opacity: .001;
 }
 
 .liverpool{
     top: 13rem;
-    left: 11rem;
+    left: 10rem;
     width: 6rem;
     height: 12rem;
     background-color:pink;
