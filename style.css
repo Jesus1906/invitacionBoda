@@ -38,7 +38,7 @@ figure{
     font-weight: 400;
     color: white;
     border-radius: 10px;
-    /* opacity: .001; */
+    opacity: .001;
 }
 
 .amazon{
@@ -58,7 +58,7 @@ figure{
     height: 12rem;
     background-color:pink;
     z-index: 200;
-    /* opacity: .001; */
+    opacity: .001;
 }
 
 .ph{
@@ -68,5 +68,5 @@ figure{
     height: 12rem;
     background-color:red;
     z-index: 100;
-    /* opacity: .001; */
+    opacity: .001;
 }
