@@ -75,9 +75,9 @@ img{
     display: grid;
     grid-template-areas: 
         "foto-1 foto-1 foto-1 foto-1 foto-2 foto-2 foto-2 foto-2 foto-2"
+        "foto-1 foto-1 foto-1 foto-1 foto-2 foto-2 foto-2 foto-2 foto-2"
         "foto-1 foto-1 foto-1 foto-1 otro foto-4 foto-4 foto-4 foto-4"
-        "foto-1 foto-1 foto-1 foto-1 otro foto-4 foto-4 foto-4 foto-4"
-        "foto-1 foto-1 foto-1 foto-1 otro foto-4 foto-4 foto-4 foto-4"
+        "foto-3 foto-3 foto-3 foto-3 foto-3 foto-4 foto-4 foto-4 foto-4"
         "foto-3 foto-3 foto-3 foto-3 foto-3 foto-4 foto-4 foto-4 foto-4";
     gap: 10px;
 
@@ -194,7 +194,7 @@ img{
 
 .confirmacion{
     margin-top: 3rem;
-    /* position: relative; */
+      position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -208,7 +208,16 @@ img{
     width: 4.8rem;
     height: 4.8rem;
  }
+
+ .confirmacion .codigo{
+   margin-top: 2rem;
+   margin-left: 2rem;
+ }
  
+
+ .confirmacion .codigo p:first-child{
+   font-size: 1.2rem;
+ } 
  .confirmacion .codigo p:last-child{
     margin-top: 0.2rem;
     font-weight: 600;
@@ -300,6 +309,7 @@ img{
     padding: 1rem;
     border-radius: 20px;
     width: 25%;
+    min-width: fit-content;
     text-align: center;
  }
  .regalo .tarjeta{
