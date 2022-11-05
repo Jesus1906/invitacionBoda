@@ -26,7 +26,7 @@ img{
 }
 
 .verso{
-    font-size: .8rem;
+    font-size: 1.2rem;
     /* word-spacing: .1rem; */
     letter-spacing: 0.2rem;
     margin: 0.9rem;
@@ -36,7 +36,7 @@ img{
 .cita{
     text-align: end;
     word-spacing: 1rem;
-    font-size: .7rem;
+    font-size: 1rem;
     margin-top: -.5rem;
     margin-bottom: 1rem;
 }
@@ -60,8 +60,8 @@ img{
     position: absolute;
     top: -2rem;
     left: -1.5rem;
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 5rem;
+    width: 5rem;
     z-index: 100;
  }
 
@@ -69,9 +69,9 @@ img{
     position: relative;
     z-index: 0;
     margin: 2rem auto;
-    border: 3px solid #00554e;
+    border: 5px solid #00554e;
     width: 90%;
-    height: 80vh;
+    height: 570px;
     display: grid;
     grid-template-areas: 
         "foto-1 foto-1 foto-1 foto-1 foto-2 foto-2 foto-2 foto-2 foto-2"
@@ -157,6 +157,12 @@ img{
     letter-spacing: .7rem;
  }
 
+ .lugar .derecha{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
+
  .lugar .derecha img{
     height: 17rem;
  }
@@ -169,22 +175,26 @@ img{
     line-height: 1.5;
  }
 
- .lugar .derecha a{
-    position: absolute;
+ .lugar .derecha .btn-ubicacion{
+    /* position: absolute;
     bottom: 0;
-    right: 1rem;
+    right: auto;
+    left: auto; */
+    margin-top: 1rem;
+    width: 100%;
     background-color: #b97438;
-    padding: 1rem;
+    padding: 12px 8px;
     border-radius: 20px;
     text-decoration: none;
+    text-align: center;
     color: white;
-    font-size: 1.8rem;
-    letter-spacing: .2rem;
+    font-size: 1.1rem;
+    letter-spacing: 8px;
  }
 
 .confirmacion{
     margin-top: 3rem;
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -199,11 +209,6 @@ img{
     height: 4.8rem;
  }
  
- .confirmacion .codigo{
-    margin-top: 1.8rem;
-    margin-left: 2rem;
- }
-
  .confirmacion .codigo p:last-child{
     margin-top: 0.2rem;
     font-weight: 600;
@@ -221,21 +226,28 @@ img{
     margin: .4rem;
  }
 
- .confirmacion .conf a{
-    position: absolute;
+ .confirmacion .conf .btn-confirmacion{
+    /* position: absolute;
     bottom: -7rem;
-    left: 6rem;
+    left: 6rem;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #b97438;
-    padding: 1rem;
+    padding: 12px 10px;
     border-radius: 20px;
     text-decoration: none;
+    text-align: center;
     color: white;
-    font-size: 1.8rem;
-    letter-spacing: .2rem;
+    font-size: 1.2rem;
+    letter-spacing: 8px;
+    margin: 60px auto 0;
+    width: 80%;
+    
  }
 
 .regalo{
-    margin-top: 10rem;
+    margin-top: 7rem;
     position: relative;
 }
 
@@ -287,6 +299,8 @@ img{
     background-color: #52877c;
     padding: 1rem;
     border-radius: 20px;
+    width: 25%;
+    text-align: center;
  }
  .regalo .tarjeta{
     margin-top: 3rem;
