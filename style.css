@@ -1,6 +1,6 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -8,65 +8,328 @@ body{
     background-color: black;
 }
 
-figure{
-    position: relative;
+/* .intro{
+    background-color: blue;
     width: 100%;
-    height: 100vh;
+} */
+p{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 50;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    margin: 2rem 1rem 0 1rem;
 }
- img{
-    position: relative;
+
+img{
     width: 100%;
-    height: 100vh;
+}
+
+.verso{
+    font-size: .8rem;
+    /* word-spacing: .1rem; */
+    letter-spacing: 0.2rem;
+    margin: 0.9rem;
+ 
+}
+
+.cita{
+    text-align: end;
+    word-spacing: 1rem;
+    font-size: .7rem;
+    margin-top: -.5rem;
+    margin-bottom: 1rem;
+}
+
+.padres p{
+    text-transform: uppercase;
+    font-size: .9rem;
+    margin: .5rem 6rem;
+    line-height: 1.5;
+}
+ .padres p span{
+    font-size: 190%;
+ }
+
+ .fotos{
+    position: relative;
     z-index: 1;
  }
 
- div a{
+ .fotos .hoja-3{
     position: absolute;
+    top: -2rem;
+    left: -1.5rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    z-index: 100;
  }
 
-.ubicacion{
-    /* position: absolute; */
-    bottom: 4rem;
-    right: 2rem;
-    width: 12rem;
-    height: 12rem;
-    background-color: orange;
-    z-index: 100;
+ .galeria{
+    position: relative;
+    z-index: 0;
+    margin: 2rem auto;
+    border: 3px solid #00554e;
+    width: 90%;
+    height: 80vh;
+    display: grid;
+    grid-template-areas: 
+        "foto-1 foto-1 foto-1 foto-1 foto-2 foto-2 foto-2 foto-2 foto-2"
+        "foto-1 foto-1 foto-1 foto-1 otro foto-4 foto-4 foto-4 foto-4"
+        "foto-1 foto-1 foto-1 foto-1 otro foto-4 foto-4 foto-4 foto-4"
+        "foto-1 foto-1 foto-1 foto-1 otro foto-4 foto-4 foto-4 foto-4"
+        "foto-3 foto-3 foto-3 foto-3 foto-3 foto-4 foto-4 foto-4 foto-4";
+    gap: 10px;
+
+ }
+
+ .item-1{
+    grid-area: foto-1;
+    height: 100%;
+    width: 100%;
+ }
+ .item-2{
+    grid-area: foto-2;
+    height: 100%;
+    width: 100%;
+ }
+ .item-3{
+    grid-area: foto-3;
+    height: 100%;
+    width: 100%;
+ }
+ .item-4{
+    grid-area: foto-4;
+    height: 100%;
+    width: 100%;
+ }
+ .datos{
+    position: relative;
+ }
+ .dia{
+    display: flex;
+    justify-content: space-around;
+ }
+
+ .dia .izquierda p{
+    font-size: 2.3rem;
+ }
+
+ .punto{
+    margin: 2rem auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #00554e;
+ }
+ 
+ .dia .derecha p:first-child{
+    font-size: 2.3em;
+    margin-bottom: -1.5rem;
+ }
+ .dia .derecha p:last-child{
+    font-size: 2rem;
+    writing-mode: vertical-rl;
+    /* word-break: break-all; */
+    background-color: #00554e;
+    padding: 2rem 1rem;
+    letter-spacing: 1.8rem;
+ }
+
+ .lugar{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+ }
+
+ .lugar .izquierda p:first-child{
+    font-size: 2.3em;
+   margin-top: 0;
+ }
+
+ .lugar .izquierda p:last-child{
+    margin: auto;
+    font-size: 2rem;
+    writing-mode: vertical-rl;
+    word-spacing: 1rem;
+    background-color: #00554e;
+    padding: 2rem 1rem;
+    letter-spacing: .7rem;
+ }
+
+ .lugar .derecha img{
+    height: 17rem;
+ }
+
+ .lugar .derecha p{
+    margin-top: 0;
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    font-weight: 500;
+    line-height: 1.5;
+ }
+
+ .lugar .derecha a{
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+    background-color: #b97438;
+    padding: 1rem;
+    border-radius: 20px;
     text-decoration: none;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 400;
     color: white;
-    border-radius: 10px;
-    opacity: .001;
+    font-size: 1.8rem;
+    letter-spacing: .2rem;
+ }
+
+.confirmacion{
+    margin-top: 3rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.amazon{
-    top: 13rem;
-    left: 3rem;
-    width: 6rem;
-    height: 12rem;
-    background-color: orange;
-    z-index: 100;
-    opacity: .001;
+ .confirmacion img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4.8rem;
+    height: 4.8rem;
+ }
+ 
+ .confirmacion .codigo{
+    margin-top: 1.8rem;
+    margin-left: 2rem;
+ }
+
+ .confirmacion .codigo p:last-child{
+    margin-top: 0.2rem;
+    font-weight: 600;
+    font-style: italic;
+ }
+
+ .confirmacion p:nth-child(3){
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+ }
+
+ .confirmacion .conf p{
+    font-size: 1rem;
+    margin: .4rem;
+ }
+
+ .confirmacion .conf a{
+    position: absolute;
+    bottom: -7rem;
+    left: 6rem;
+    background-color: #b97438;
+    padding: 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    letter-spacing: .2rem;
+ }
+
+.regalo{
+    margin-top: 10rem;
+    position: relative;
 }
 
-.liverpool{
-    top: 13rem;
-    left: 10rem;
-    width: 6rem;
-    height: 12rem;
-    background-color:pink;
-    z-index: 200;
-    opacity: .001;
-}
+ .regalo h1{
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    letter-spacing: .2rem;
+ }
 
-.ph{
-    top: 13rem;
-    right: 2rem;
+ .regalo .hoja-6{
+    position: absolute;
+    top:2rem;
+    right: 0;
+    width: 4.8rem;
+    height: 4.8rem;
+ }
+
+ .regalo .img-regalo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 3rem auto;
+    
+ }
+
+ .regalo .img-regalo img{
     width: 6rem;
-    height: 12rem;
-    background-color:red;
-    z-index: 100;
-    opacity: .001;
-}
+    margin-left: 2rem;
+ }
+ .regalo .img-regalo p{
+    width: 100%;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    text-align: start;
+    line-height: 1.5;
+ }
+
+ .regalo .tiendas{
+    display: flex;
+    justify-content: space-around;
+ }
+
+ .regalo .tiendas a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: #52877c;
+    padding: 1rem;
+    border-radius: 20px;
+ }
+ .regalo .tarjeta{
+    margin-top: 3rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+ }
+
+ .regalo .tarjeta img{
+    width: 10rem;
+    height: 8rem;
+    justify-items: end;
+ }
+
+ .regalo .tarjeta .texto p span{
+    font-size: 150%;
+ }
+
+ .regalo .tarjeta .texto p:first-child{
+    text-align: end;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+ }
+
+ .regalo .tarjeta .texto p:nth-child(2){
+    margin-top: 0;
+    font-size: 1rem;
+    letter-spacing: 0;
+    text-align: end;
+ }
+
+ .regalo .tarjeta .texto p:last-child{
+    font-size: 1rem;
+    text-align: end;
+    margin-top: .3rem;
+ }
+
+ .regalo .despedida p{
+    margin-top: 5rem;
+    margin-bottom: 0;
+    line-height: 2;
+ }
