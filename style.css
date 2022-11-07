@@ -73,8 +73,8 @@ img{
     position: relative;
     z-index: 0;
     margin: 2rem auto;
-    border: 5px solid #00554e;
-    width: 90%;
+    border: 3px solid #00554e;
+    /* width: 90%; */
     height: 450px;
     display: grid;
     grid-template-areas: 
@@ -202,7 +202,7 @@ img{
 
 .confirmacion{
     margin-top: 3rem;
-      position: relative;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -358,10 +358,13 @@ img{
     letter-spacing: .2rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
+    margin-left: -1rem;
  }
 
  .regalo .tarjeta .texto p:nth-child(2){
     margin-top: 0;
+    width: 110%;
+    margin-left: -2.5rem;
     font-size: 14px;
     letter-spacing: 0;
     text-align: end;
@@ -370,7 +373,7 @@ img{
  .regalo .tarjeta .texto p:last-child{
     font-size: 1rem;
     text-align: end;
-    margin-top: .1rem;
+    margin-top: -1.5rem;
  }
 
  .regalo .despedida p{
