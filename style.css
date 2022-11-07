@@ -75,14 +75,14 @@ img{
     margin: 2rem auto;
     border: 3px solid #00554e;
     /* width: 90%; */
-    height: 450px;
+    height: 400px;
     display: grid;
     grid-template-areas: 
-        "foto-1 foto-1 foto-1 foto-1 foto-2 foto-2 foto-2 foto-2 foto-2"
-        "foto-1 foto-1 foto-1 foto-1 foto-2 foto-2 foto-2 foto-2 foto-2"
-        "foto-1 foto-1 foto-1 foto-1 otro foto-4 foto-4 foto-4 foto-4"
-        "foto-3 foto-3 foto-3 foto-3 foto-3 foto-4 foto-4 foto-4 foto-4"
-        "foto-3 foto-3 foto-3 foto-3 foto-3 foto-4 foto-4 foto-4 foto-4";
+        "foto-1 foto-1 foto-1 foto-2 foto-2 foto-2 foto-2"
+        "foto-1 foto-1 foto-1 foto-2 foto-2 foto-2 foto-2"
+        "foto-1 foto-1 foto-1 otro foto-4 foto-4 foto-4"
+        "foto-3 foto-3 foto-3 foto-3 foto-4 foto-4 foto-4"
+        "foto-3 foto-3 foto-3 foto-3 foto-4 foto-4 foto-4";
     gap: 10px;
 
  }
@@ -91,21 +91,25 @@ img{
     grid-area: foto-1;
     height: 100%;
     width: 100%;
+    object-fit: cover;
  }
  .item-2{
     grid-area: foto-2;
     height: 100%;
     width: 100%;
+    object-fit: cover;
  }
  .item-3{
     grid-area: foto-3;
     height: 100%;
     width: 100%;
+    object-fit: cover;
  }
  .item-4{
     grid-area: foto-4;
     height: 100%;
     width: 100%;
+    object-fit: cover;
  }
  .datos{
     position: relative;
