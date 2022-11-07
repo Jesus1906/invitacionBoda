@@ -14,11 +14,11 @@ body{
 } */
 p{
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 50;
     text-align: center;
     letter-spacing: 0.3rem;
-    margin: 2rem 1rem 0 1rem;
+    margin: 2rem 1rem 2rem 1rem;
 }
 
 img{
@@ -26,7 +26,7 @@ img{
 }
 
 .verso{
-    font-size: 1.2rem;
+    font-size: 14px;
     /* word-spacing: .1rem; */
     letter-spacing: 0.2rem;
     margin: 0.9rem;
@@ -38,13 +38,17 @@ img{
     word-spacing: 1rem;
     font-size: 1rem;
     margin-top: -.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.versiculo img{
+   margin-bottom: 1rem;
 }
 
 .padres p{
     text-transform: uppercase;
-    font-size: .9rem;
-    margin: .5rem 6rem;
+    font-size: 16px;
+    /* margin: .5rem 6rem; */
     line-height: 1.5;
 }
  .padres p span{
@@ -71,7 +75,7 @@ img{
     margin: 2rem auto;
     border: 5px solid #00554e;
     width: 90%;
-    height: 570px;
+    height: 450px;
     display: grid;
     grid-template-areas: 
         "foto-1 foto-1 foto-1 foto-1 foto-2 foto-2 foto-2 foto-2 foto-2"
@@ -109,10 +113,11 @@ img{
  .dia{
     display: flex;
     justify-content: space-around;
+    margin-top: 2rem;
  }
 
  .dia .izquierda p{
-    font-size: 2.3rem;
+    font-size: 28px;
  }
 
  .punto{
@@ -132,14 +137,16 @@ img{
     writing-mode: vertical-rl;
     /* word-break: break-all; */
     background-color: #00554e;
-    padding: 2rem 1rem;
+    padding: 1rem;
+    text-align: center;
     letter-spacing: 1.8rem;
+    height: 350px;
  }
 
  .lugar{
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
  }
 
  .lugar .izquierda p:first-child{
@@ -164,15 +171,16 @@ img{
  }
 
  .lugar .derecha img{
-    height: 17rem;
+    height: 220px;
+    width: 220px;
  }
 
  .lugar .derecha p{
-    margin-top: 0;
-    font-size: 1.2rem;
+    margin-top: 20px;
+    font-size: 14px;
     letter-spacing: 0;
     font-weight: 500;
-    line-height: 1.5;
+    
  }
 
  .lugar .derecha .btn-ubicacion{
@@ -181,15 +189,15 @@ img{
     right: auto;
     left: auto; */
     margin-top: 1rem;
-    width: 100%;
+    width: 90%;
     background-color: #b97438;
-    padding: 12px 8px;
+    padding:16px 4px;
     border-radius: 20px;
     text-decoration: none;
     text-align: center;
     color: white;
-    font-size: 1.1rem;
-    letter-spacing: 8px;
+    font-size: 16px;
+    letter-spacing: 4px;
  }
 
 .confirmacion{
@@ -209,17 +217,19 @@ img{
     height: 4.8rem;
  }
 
- .confirmacion .codigo{
-   margin-top: 2rem;
-   margin-left: 2rem;
+.confirmacion .codigo{
+   margin-top: 45px;
+   margin-left: 21px;
  }
  
 
  .confirmacion .codigo p:first-child{
-   font-size: 1.2rem;
+   font-size: 20px;
+   letter-spacing: 0;
  } 
  .confirmacion .codigo p:last-child{
-    margin-top: 0.2rem;
+    margin-top: -2rem;
+    font-size: 25px;
     font-weight: 600;
     font-style: italic;
  }
@@ -231,8 +241,15 @@ img{
  }
 
  .confirmacion .conf p{
-    font-size: 1rem;
-    margin: .4rem;
+    font-size: 16px;
+    letter-spacing: 0;
+    margin: 8px;
+    /* margin: .4rem; */
+ }
+
+ .confirmacion .conf p:nth-child(3){
+   font-size: 20px;
+   /* letter-spacing: 2px; */
  }
 
  .confirmacion .conf .btn-confirmacion{
@@ -251,13 +268,14 @@ img{
     font-size: 1.2rem;
     letter-spacing: 8px;
     margin: 60px auto 0;
-    width: 80%;
+    width: 100%;
     
  }
 
 .regalo{
     margin-top: 7rem;
     position: relative;
+    
 }
 
  .regalo h1{
@@ -278,19 +296,20 @@ img{
  .regalo .img-regalo{
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin: 3rem auto;
     
  }
 
  .regalo .img-regalo img{
-    width: 6rem;
+    height: 100px;
+    width: 80px;
     margin-left: 2rem;
  }
  .regalo .img-regalo p{
     width: 100%;
     margin-left: 2rem;
-    font-size: 1.2rem;
+    font-size: 16px;
     text-align: start;
     line-height: 1.5;
  }
@@ -303,10 +322,10 @@ img{
  .regalo .tiendas a{
     color: white;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 16px;
     font-weight: bold;
     background-color: #52877c;
-    padding: 1rem;
+    padding: 16px 5px;
     border-radius: 20px;
     width: 25%;
     min-width: fit-content;
@@ -315,14 +334,16 @@ img{
  .regalo .tarjeta{
     margin-top: 3rem;
     display: flex;
-    align-items: flex-end;
-    justify-content: end;
+    /* align-items: flex-end; */
+    /* justify-content: end; */
  }
 
  .regalo .tarjeta img{
-    width: 10rem;
-    height: 8rem;
-    justify-items: end;
+    width: 150px;
+    height: 150px;
+    justify-items: flex-end;
+    align-items: center;
+    /* padding-left: 1rem; */
  }
 
  .regalo .tarjeta .texto p span{
@@ -331,7 +352,7 @@ img{
 
  .regalo .tarjeta .texto p:first-child{
     text-align: end;
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: .2rem;
@@ -341,7 +362,7 @@ img{
 
  .regalo .tarjeta .texto p:nth-child(2){
     margin-top: 0;
-    font-size: 1rem;
+    font-size: 14px;
     letter-spacing: 0;
     text-align: end;
  }
@@ -349,7 +370,7 @@ img{
  .regalo .tarjeta .texto p:last-child{
     font-size: 1rem;
     text-align: end;
-    margin-top: .3rem;
+    margin-top: .1rem;
  }
 
  .regalo .despedida p{
