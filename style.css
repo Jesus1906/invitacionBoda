@@ -12,7 +12,7 @@ body{
     background-color: blue;
     width: 100%;
 } */
-.intro p{
+p{
     color: white;
     font-size: 1rem;
     font-weight: 50;
@@ -117,9 +117,9 @@ img{
     width: 100%;
     object-fit: cover;
  }
- .datos{
+ /* .datos{
     position: relative;
- }
+ } */
  .dia{
     display: flex;
     justify-content: space-around;
