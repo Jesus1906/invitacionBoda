@@ -12,9 +12,9 @@ body{
     background-color: blue;
     width: 100%;
 } */
-p{
+.intro p{
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 50;
     text-align: center;
     letter-spacing: 0.3rem;
@@ -60,10 +60,16 @@ img{
     z-index: 1;
  }
 
+ .fotos .foto_nombre{
+   /* border: 5px solid red; */
+   object-fit: cover;
+   width: 100vw;
+ }
+
  .fotos .hoja-3{
     position: absolute;
-    top: -2rem;
-    left: -1.5rem;
+    top: -3.5rem;
+    left: -.5rem;
     height: 5rem;
     width: 5rem;
     z-index: 100;
@@ -188,10 +194,6 @@ img{
  }
 
  .lugar .derecha .btn-ubicacion{
-    /* position: absolute;
-    bottom: 0;
-    right: auto;
-    left: auto; */
     margin-top: 1rem;
     width: 90%;
     background-color: #b97438;
@@ -204,6 +206,16 @@ img{
     letter-spacing: 4px;
  }
 
+ .lugar .derecha .btn-ubicacion:hover{
+   background-color: white;
+   color: #b97438;
+   scale: 1.1;
+ }
+
+ .lugar .derecha .btn-ubicacion:active{
+   background-color: white;
+   color: #b97438;
+ }
 .confirmacion{
     margin-top: 3rem;
     position: relative;
@@ -270,7 +282,18 @@ img{
     letter-spacing: 8px;
     margin: 60px auto 0;
     width: 100%;
-    
+ }
+
+ .confirmacion .conf .btn-confirmacion:hover{
+   background-color: white;
+   color: #b97438;
+   scale: 1.1;
+ }
+
+ 
+ .confirmacion .conf .btn-confirmacion:active{
+   background-color: white;
+   color: #b97438;
  }
 
 .regalo{
@@ -407,6 +430,6 @@ img{
 
  .regalo .despedida img{
    object-fit: cover;
-   width: 70%;
+   width: 60%;
    margin: 2rem;
 }
